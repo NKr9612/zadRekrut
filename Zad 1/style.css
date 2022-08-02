@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 250px;
+}
+
+.bricks{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+}
+.footer img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.bricks div{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 100px;
+}
+.bricks:nth-child(0){
+    animation: borderIn .3s 0s 1 linear forwards;
+}
+.bricks div img{
+    margin-top: 3px;
+    align-self: center;
+    width: 50%;
+    height: 70%;
+}
+
+.bricks div p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+@keyframes borderIn {
+    0%{
+        border: none;
+    }
+    100%{
+        border: 1px solid red;
+    }
+    
+}
+@keyframes borderOut{
+    0%{
+        border: 1px solid red;
+    }
+    100%{
+        border: none;
+    }
+}
+
